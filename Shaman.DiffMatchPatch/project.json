@@ -1,0 +1,41 @@
+{
+  "version": "1.0.0.3",
+  "description": "Low-allocation version of DiffMatchPatch",
+  "tags": [
+    "performance",
+    "gc",
+    "diff",
+    "match",
+    "patch"
+  ],
+  "authors": [
+    "Andrea Martinelli"
+  ],
+  "iconUrl": "http://shaman.io/images/shaman-nuget-icon.png",
+  "dependencies": {
+    "Shaman.ValueString": "1.0.2.9"
+  },
+  "projectUrl": "http://shaman.io/",
+  "compilationOptions": {
+    "keyFile": "../ShamanOpenSourceKey.snk",
+    "allowUnsafe": true
+  },
+  "compile": [
+    "../Awdee2.AI/RequestMaker/DiffMatchPatch.cs"
+  ],
+  "frameworks": {
+    "net45": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.0.0",
+        "System.Runtime.Extensions": "4.0.0.0",
+        "System.Collections": "4.0.0.0",
+        "System.Text.RegularExpressions": "4.0.0.0"
+      }
+    },
+    "dotnet": {
+      "dependencies": {
+        "System.Text.RegularExpressions": "4.0.0"
+      }
+    }
+  }
+}
