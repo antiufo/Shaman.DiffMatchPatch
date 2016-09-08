@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0.3",
+  "version": "1.0.0.4",
   "description": "Low-allocation version of DiffMatchPatch",
   "tags": [
     "performance",
@@ -13,16 +13,14 @@
   ],
   "iconUrl": "http://shaman.io/images/shaman-nuget-icon.png",
   "dependencies": {
-    "Shaman.ValueString": "1.0.2.9"
+    "Shaman.ValueString": "1.0.2.19"
   },
   "projectUrl": "http://shaman.io/",
   "compilationOptions": {
-    "keyFile": "../ShamanOpenSourceKey.snk",
+    "keyFile": "ShamanOpenSourceKey.snk",
     "allowUnsafe": true
   },
-  "compile": [
-    "../Awdee2.AI/RequestMaker/DiffMatchPatch.cs"
-  ],
+  "compile": [],
   "frameworks": {
     "net45": {
       "frameworkAssemblies": {
@@ -32,9 +30,11 @@
         "System.Text.RegularExpressions": "4.0.0.0"
       }
     },
-    "dotnet": {
+    "netstandard1.3": {
       "dependencies": {
-        "System.Text.RegularExpressions": "4.0.0"
+        "System.Runtime": "4.1",
+        "System.Runtime.Extensions": "4.1",
+        "System.Text.RegularExpressions": "4.1.0"
       }
     }
   }
