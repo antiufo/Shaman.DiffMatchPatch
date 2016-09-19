@@ -1,0 +1,2 @@
+# Shaman.DiffMatchPatch
+Low-allocation version of DiffMatchPatch, a diff/patch library, using [Shaman.ValueString](https://github.com/antiufo/Shaman.ValueString) for string manipulation and representation.
