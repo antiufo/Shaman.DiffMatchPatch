@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0.4",
+  "version": "1.0.0.5",
   "description": "Low-allocation version of DiffMatchPatch",
   "tags": [
     "performance",
@@ -13,7 +13,7 @@
   ],
   "iconUrl": "http://shaman.io/images/shaman-nuget-icon.png",
   "dependencies": {
-    "Shaman.ValueString": "1.0.2.19"
+    "Shaman.ValueString": "1.0.2.29"
   },
   "projectUrl": "http://shaman.io/",
   "compilationOptions": {
