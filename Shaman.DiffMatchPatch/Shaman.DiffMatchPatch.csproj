@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RuntimeFrameworkVersion>2.0.0-beta-001509-00</RuntimeFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Description>Low-allocation version of DiffMatchPatch</Description>
+    <VersionPrefix>1.0.0.5</VersionPrefix>
+    <Authors>Andrea Martinelli</Authors>
+    <TargetFrameworks>net45;netstandard1.3</TargetFrameworks>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>Shaman.DiffMatchPatch</AssemblyName>
+    <AssemblyOriginatorKeyFile>ShamanOpenSourceKey.snk</AssemblyOriginatorKeyFile>
+    <SignAssembly>true</SignAssembly>
+    <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
+    <PackageId>Shaman.DiffMatchPatch</PackageId>
+    <PackageTags>performance;gc;diff;match;patch</PackageTags>
+    <PackageIconUrl>http://shaman.io/images/shaman-nuget-icon.png</PackageIconUrl>
+    <PackageProjectUrl>http://shaman.io/</PackageProjectUrl>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+  </PropertyGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PackageReference Include="Shaman.ValueString" Version="1.0.2.19" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net45' ">
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Extensions" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Text.RegularExpressions" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.3' ">
+    <PackageReference Include="System.Runtime" Version="4.1" />
+    <PackageReference Include="System.Runtime.Extensions" Version="4.1" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.1.0" />
+  </ItemGroup>
+</Project>
